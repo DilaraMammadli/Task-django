@@ -1,0 +1,11 @@
+<ul>
+    {% for product in products %}
+    <li>
+        {{product.name}} -- {{product.price}} -- 
+        {%if product.description%} 
+        {{product.description}}
+        {%else%} No description
+        {%endif%}
+    </li>
+    {%endfor%}
+</ul>
